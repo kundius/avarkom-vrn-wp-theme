@@ -116,7 +116,8 @@ Template Name: Главная
                   Оперативно
                 </div>
                 <div class="intro-advantages__item-desc">
-                  выезд на место ДТП за&nbsp;5&nbsp;минут
+                  Выезд на место ДТП<br />
+                  за 5 минут
                 </div>
               </div>
             </div>
@@ -143,7 +144,7 @@ Template Name: Главная
                   Выгодно
                 </div>
                 <div class="intro-advantages__item-desc">
-                  оформление<br />
+                  Оформление<br />
                   европротокола бесплатно
                 </div>
               </div>

@@ -221,10 +221,13 @@
 .intro-advantages {
   display: flex;
   justify-content: space-between;
-  margin-top: 44px;
+  margin-top: 178px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.529);
   box-shadow: 0.5px 0.866px 9px 0px rgba(0, 0, 0, 0.14);
+  padding: 10px 41px 8px 54px;
+  margin-left: 18px;
+  margin-right: 18px;
 
   @include below(sm) {
     margin-top: 30px;
@@ -254,8 +257,8 @@
   border-color: rgb(255, 203, 0);
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  width: 76px;
-  height: 76px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,7 +283,7 @@
   color: #34363a;
   line-height: 1.222;
   font-size: 18px;
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 .intro-form-result {
