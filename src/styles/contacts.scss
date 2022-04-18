@@ -7,44 +7,6 @@
   z-index: 200;
 }
 
-.section-contacts__bg-pattern {
-  position: absolute;
-  width: 560px;
-  height: 760px;
-  background-color: rgba(250, 241, 236, 0.502);
-  top: 0;
-  left: calc(50% + 80px);
-  transform: skew(26deg);
-  z-index: 2;
-  pointer-events: none;
-}
-
-.section-contacts__bg-pattern::before {
-  content: '';
-  position: absolute;
-  display: block;
-  right: 100%;
-  top: -185px;
-  height: 405px;
-  width: 100vw;
-  background-color: rgba(250, 241, 236, 0.502);
-
-  @include below(md) {
-    top: -55px;
-  }
-}
-
-.section-contacts__bg-pattern::after {
-  content: '';
-  position: absolute;
-  display: block;
-  left: 100%;
-  bottom: 0px;
-  height: 315px;
-  width: 100vw;
-  background-color: rgba(250, 241, 236, 0.502);
-}
-
 .section-contacts::before {
   content: '';
   display: block;
@@ -52,23 +14,9 @@
   top: 0;
   left: 0;
   z-index: 1;
-  height: 100px;
+  height: 180px;
   background: #fff;
   width: 100%;
-  pointer-events: none;
-}
-
-.section-contacts::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: calc(50% + 480px);
-  z-index: 1;
-  height: 600px;
-  background: #fff;
-  width: 50vw;
-  transform: skewX(26deg);
   pointer-events: none;
 }
 

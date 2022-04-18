@@ -338,8 +338,6 @@ Template Name: Главная
     
       <?php $contacts = get_field('theme_contacts_items', 'options') ?>
       <section class="section-contacts" data-scrollspy-section id="contacts">
-        <div class="section-contacts__bg-pattern"></div>
-
         <div class="ui-container">
           <div class="section-contacts__title">Контакты</div>
 
