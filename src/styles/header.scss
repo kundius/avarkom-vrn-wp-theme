@@ -109,11 +109,23 @@
   line-height: 1;
   letter-spacing: 0.05em;
   margin-top: 3px;
+  display: flex;
+  align-items: center;
 
   @include below(sm) {
     font-size: 10px;
     letter-spacing: .035em;
   }
+}
+
+.header__phone-time::before {
+  content: '';
+  background: url('../images/icon-time.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 30px;
+  height: 26px;
+  display: block;
+  margin-right: 4px;
 }
 
 @include above(md) {
@@ -199,7 +211,6 @@
     font-size: 20px;
     letter-spacing: 0.025em;
     line-height: 50px;
-    text-transform: uppercase;
     position: relative;
     display: block;
     text-decoration: none;
@@ -207,7 +218,7 @@
 
   .header__menu li a::after {
     content: '';
-    width: 41px;
+    width: 10px;
     height: 10px;
     border-radius: 5px;
     position: absolute;
@@ -411,13 +422,24 @@
   text-decoration: none;
 }
 
-.header-messengers__button svg {
+.header-messengers__button_whatsapp::before {
+  content: '';
+  display: block;
+  background: url('../images/icon-whatsapp.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 27px;
+  height: 26px;
   margin-left: -3px;
-  margin-right: 3px;
 }
 
-.header-messengers__button_whatsapp svg {
-  margin-right: -3px;
+.header-messengers__button_viber::before {
+  content: '';
+  display: block;
+  background: url('../images/icon-viber.png') no-repeat 50% 50%;
+  background-size: cover;
+  width: 28px;
+  height: 30px;
+  margin-left: -3px;
 }
 
 .header-messengers__button:hover {

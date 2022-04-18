@@ -40,7 +40,7 @@
 
     <div class="header__phone">
       <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="header__phone-number"><?php the_field('theme_phone', 'options') ?></a>
-      <div class="header__phone-time">круглосуточно, без выходных</div>
+      <div class="header__phone-time"><span>круглосуточно, без выходных</span></div>
     </div>
   </div>
 </header>
