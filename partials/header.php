@@ -32,8 +32,8 @@
         <a class="header-messengers__button header-messengers__button_whatsapp" href="whatsapp://send?text=Hello&phone=<?php echo preg_replace("/[ \(\)\-]/", "", get_field('phone_whatsapp', 'options')) ?>">
           WhatsApp
         </a>
-        <a class="header-messengers__button header-messengers__button_telegram" href="tg://resolve?domain=<?php echo preg_replace("/[ \(\)\-]/", "", get_field('phone_telegram', 'options')) ?>">
-          Telegram
+        <a class="header-messengers__button header-messengers__button_viber" href="viber://add?number=<?php echo preg_replace("/[^,.0-9]/", '', get_field('theme_viber', 'options')) ?>">
+          Viber
         </a>
       </div>
     </div>
