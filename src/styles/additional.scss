@@ -47,17 +47,17 @@
 
 .additional__items {
   position: relative;
+  padding: 1px;
 }
 
 .additional__items::after {
   content: '';
   position: absolute;
   display: block;
-  left: 0;
-  right: 0;
-  top: -20px;
+  left: calc(calc(33.3333333333% / 2) - 25px);
+  right: calc(calc(33.3333333333% / 2) - 25px);
+  top: -39px;
   height: 2px;
-  width: 100%;
   background: #6cd8ff;
 }
 
@@ -106,7 +106,7 @@
   left: 50%;
   bottom: 100%;
   width: 12px;
-  height: 37px;
+  height: 40px;
   border-left: 2px solid #6cd8ff;
   border-top: 2px solid #6cd8ff;
   border-radius: 8px 0 0 0;
@@ -132,7 +132,7 @@
   left: 50%;
   bottom: 100%;
   width: 12px;
-  height: 37px;
+  height: 40px;
   border-right: 2px solid #6cd8ff;
   border-top: 2px solid #6cd8ff;
   border-radius: 0 8px 0 0;
@@ -146,9 +146,9 @@
   opacity: .40;
   font-weight: 100;
   position: absolute;
-  left: calc(-35em / 310);
-  top: calc(-64em / 310);
-  width: calc(200em / 310);
+  left: calc(-35em / 260);
+  top: calc(-20em / 260);
+  width: calc(200em / 260);
   text-align: center;
   pointer-events: none;
 }
@@ -158,9 +158,9 @@
   letter-spacing: 0.075em;
   color: #ffffff;
   font-weight: bold;
-  line-height: calc(30em / 18);
+  line-height: calc(20em / 16);
   position: absolute;
-  top: calc(30em / 18);
+  top: calc(21em / 16);
   left: 50%;
   width: 80%;
   text-align: center;
@@ -168,12 +168,12 @@
 
   &::after {
     content: '';
-    height: 9px;
-    width: 52px;
+    height: calc(9em / 16);
+    width: calc(52em / 16);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: calc(20em / 16);
     background: #0088e0;
   }
 
@@ -189,6 +189,11 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: calc(25em / 16);
+  width: calc(150em / 16);
+  height: calc(150em / 16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include below(sm) {
     transform: translateX(-50%) scale(0.8);
