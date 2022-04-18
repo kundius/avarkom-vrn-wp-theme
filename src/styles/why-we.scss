@@ -1,5 +1,5 @@
 .why-we {
-  padding-top: 60px;
+  padding-top: 53px;
   padding-bottom: 80px;
 }
 
@@ -11,6 +11,7 @@
   font-size: 60px;
   line-height: 1;
   letter-spacing: 0.01em;
+  margin-bottom: 23px;
 }
 
 .why-we__layout {
@@ -21,6 +22,7 @@
 .why-we-years {
   position: relative;
   width: 320px;
+  padding-top: 56px;
 }
 
 .why-we-years::before {
@@ -30,6 +32,7 @@
   border-radius: 50%;
   background: #ff8825;
   position: absolute;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -39,6 +42,7 @@
   text-align: center;
   color: #51afe4;
   font-size: 160px;
+  line-height: 1;
 }
 
 .why-we-years__label {
@@ -46,6 +50,7 @@
   line-height: 1;
   color: #252525;
   text-align: center;
+  margin-top: -2px;
 }
 
 .why-we-expert {
@@ -60,6 +65,7 @@
   border-radius: 50%;
   background: #ff8825;
   position: absolute;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -69,6 +75,8 @@
   height: 156px;
   margin-left: auto;
   margin-right: auto;
+  background: url('../images/why-we.svg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .why-we-expert__label {
@@ -90,6 +98,7 @@
   border-radius: 50%;
   background: #ff8825;
   position: absolute;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
