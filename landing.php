@@ -156,43 +156,45 @@ Template Name: Главная
       <section class="additional">
         <div class="ui-container">
           <div class="additional__title">Кроме того, выполняем:</div>
-          <div class="additional__grid">
-            <div class="additional__grid-cell">
-              <div class="additional-item additional-item_first">
-                <div class="additional-item__number">1</div>
-                <div class="additional-item__title">Бесплатная консультация</div>
-                <div class="additional-item__image">
-                  <img
-                    src="<?php bloginfo('template_url') ?>/dist/images/additional-1.svg"
-                    alt=""
-                    style="width: calc(108em / 16); height: calc(109em / 16);"
-                  />
+          <div class="additional__items">
+            <div class="additional__grid">
+              <div class="additional__grid-cell">
+                <div class="additional-item additional-item_first">
+                  <div class="additional-item__number">1</div>
+                  <div class="additional-item__title">Бесплатная консультация</div>
+                  <div class="additional-item__image">
+                    <img
+                      src="<?php bloginfo('template_url') ?>/dist/images/additional-1.svg"
+                      alt=""
+                      style="width: calc(108em / 16); height: calc(109em / 16);"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="additional__grid-cell">
-              <div class="additional-item additional-item_middle">
-                <div class="additional-item__number">2</div>
-                <div class="additional-item__title">Юридическое сопровождение</div>
-                <div class="additional-item__image">
-                  <img
-                    src="<?php bloginfo('template_url') ?>/dist/images/additional-2.svg"
-                    alt=""
-                    style="width: calc(116em / 16); height: calc(133em / 16);"
-                  />
+              <div class="additional__grid-cell">
+                <div class="additional-item additional-item_middle">
+                  <div class="additional-item__number">2</div>
+                  <div class="additional-item__title">Юридическое сопровождение</div>
+                  <div class="additional-item__image">
+                    <img
+                      src="<?php bloginfo('template_url') ?>/dist/images/additional-2.svg"
+                      alt=""
+                      style="width: calc(116em / 16); height: calc(133em / 16);"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="additional__grid-cell">
-              <div class="additional-item additional-item_last">
-                <div class="additional-item__number">3</div>
-                <div class="additional-item__title">Оценка ущерба</div>
-                <div class="additional-item__image">
-                  <img
-                    src="<?php bloginfo('template_url') ?>/dist/images/additional-3.svg"
-                    alt=""
-                    style="width: calc(143em / 16); height: calc(134em / 16);"
-                  />
+              <div class="additional__grid-cell">
+                <div class="additional-item additional-item_last">
+                  <div class="additional-item__number">3</div>
+                  <div class="additional-item__title">Оценка ущерба</div>
+                  <div class="additional-item__image">
+                    <img
+                      src="<?php bloginfo('template_url') ?>/dist/images/additional-3.svg"
+                      alt=""
+                      style="width: calc(143em / 16); height: calc(134em / 16);"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
