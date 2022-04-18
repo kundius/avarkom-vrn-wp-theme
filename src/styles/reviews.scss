@@ -6,7 +6,7 @@
   max-width: 100%;
   padding-top: 57px;
   padding-bottom: 25px;
-  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 0%, rgb(0,0,0) 100%);
+  background-image: radial-gradient(circle at 40% 100%, #159afd 0%, #0e67a9 100%);
 
   @include below(sm) {
     padding-top: 40px;
