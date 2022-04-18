@@ -28,7 +28,7 @@ Template Name: Главная
           <div class="intro-body">
             <div class="intro-body__content">
               <div class="intro-body__title">
-                <span>Оформление ДТП</span>
+                <span>Оформим ДТП</span>
                 в Воронеже
               </div>
               <div class="intro-body__desc">
