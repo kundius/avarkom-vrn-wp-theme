@@ -1,6 +1,6 @@
 .intro {
   background: #ffffff url('../images/bg-intro.jpg') no-repeat 50% 0;
-  padding-top: 35px;
+  padding-top: 56px;
   padding-bottom: 55px;
 
   @include below(sm) {
@@ -10,7 +10,7 @@
 }
 
 .intro-special {
-  margin-bottom: 61px;
+  margin-bottom: 41px;
 
   @include below(sm) {
     margin-bottom: 45px;
@@ -20,8 +20,8 @@
 .intro-special__title {
   font-size: 16px;
   color: #818181;
-  letter-spacing: 0.160em;
-  font-weight: bold;
+  letter-spacing: 0.14em;
+  font-weight: 500;
   line-height: 1;
 
   @include below(sm) {
@@ -31,8 +31,8 @@
 
 .intro-special__desc {
   font-size: 16px;
-  letter-spacing: 0.160em;
-  font-weight: bold;
+  letter-spacing: 0.14em;
+  font-weight: 500;
   line-height: 1;
   color: #010101;
   margin-top: 9px;
