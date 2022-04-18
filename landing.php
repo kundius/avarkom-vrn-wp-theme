@@ -204,21 +204,28 @@ Template Name: Главная
 
       <section class="why-we" data-scrollspy-section id="advantages">
         <div class="ui-container">
+          <div class="why-we__title">
+            Почему мы
+          </div>
           <div class="why-we__layout">
-            <div class="why-we__layout-title">
-              <div class="why-we__title">Почему мы</div>
-            </div>
-            <div class="why-we__layout-desc">
-              <div class="why-we__desc">
-                За время плодотворной работы мы заслужили репутацию надежных экспертов во всем Воронеже.
+            <div class="why-we-years">
+              <div class="why-we-years__number">
+                20
+              </div>
+              <div class="why-we-years__label">
+                лет работы
               </div>
             </div>
-            <div class="why-we__layout-items">
-              <ul class="why-we__items">
-                <li>20 лет работы</li>
-                <li>Профессионалы комиссары</li>
-                <li>Более 10 000 оформлений</li>
-              </ul>
+            <div class="why-we-expert">
+              <div class="why-we-expert__image"></div>
+              <div class="why-we-expert__label">
+                Профессионалы комиссары
+              </div>
+            </div>
+            <div class="why-we-total">
+              <div class="why-we-total__before">Более</div>
+              <div class="why-we-total__number">10 000</div>
+              <div class="why-we-total__after">оформлений</div>
             </div>
           </div>
         </div>
