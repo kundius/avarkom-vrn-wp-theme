@@ -158,9 +158,14 @@
   letter-spacing: 0.075em;
   color: #ffffff;
   font-weight: bold;
-  line-height: calc(20em / 24);
+  line-height: calc(30em / 24);
   position: absolute;
-  top: calc(21em / 24);
+  top: calc(32em / 24);
+  min-height: calc(89em / 24);
+  padding-bottom: calc(29em / 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 50%;
   width: 80%;
   text-align: center;
@@ -168,13 +173,14 @@
 
   &::after {
     content: '';
+    background: #0088e0;
     height: calc(9em / 24);
     width: calc(52em / 24);
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: calc(20em / 24);
-    background: #0088e0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
   }
 
   @include below(md) {
@@ -188,7 +194,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: calc(25em / 16);
+  bottom: calc(20em / 16);
   width: calc(150em / 16);
   height: calc(150em / 16);
   display: flex;
