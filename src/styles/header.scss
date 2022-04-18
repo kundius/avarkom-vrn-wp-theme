@@ -29,6 +29,12 @@
   }
 }
 
+.header__sep-1,
+.header__sep-2,
+.header__sep-3 {
+  flex-grow: 1;
+}
+
 .header__logo {
   display: block;
   margin-right: 52px;
@@ -105,12 +111,13 @@
 }
 
 .header__phone-time {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1;
-  letter-spacing: 0.05em;
-  margin-top: 3px;
+  letter-spacing: .05em;
+  margin-top: 4px;
   display: flex;
   align-items: center;
+  text-align: right;
 
   @include below(sm) {
     font-size: 10px;
@@ -395,11 +402,11 @@
 }
 
 .header-messengers__label {
-  font-size: 14px;
-  letter-spacing: 0.025em;
+  font-size: 12px;
+  letter-spacing: 0.04em;
   color: #1c1e21;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .header-messengers__buttons {
@@ -430,7 +437,8 @@
   background-size: cover;
   width: 27px;
   height: 26px;
-  margin-left: -3px;
+  margin-left: -4px;
+  margin-right: -1px;
 }
 
 .header-messengers__button_viber::before {
@@ -441,6 +449,7 @@
   width: 28px;
   height: 30px;
   margin-left: -3px;
+  margin-right: 2px;
 }
 
 .header-messengers__button:hover {

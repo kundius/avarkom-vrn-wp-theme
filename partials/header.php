@@ -10,6 +10,8 @@
       <li>Выезд за 5 минут на место</li>
       <li>Оформление ДТП в Воронеже</li>
     </ul>
+
+    <div class="header__sep-1"></div>
   
     <ul class="header__menu">
       <li>
@@ -26,6 +28,8 @@
       </li>
     </ul>
 
+    <div class="header__sep-2"></div>
+
     <div class="header-messengers">
       <div class="header-messengers__label">Задайте вопрос напрямую в:</div>
       <div class="header-messengers__buttons">
@@ -38,9 +42,11 @@
       </div>
     </div>
 
+    <div class="header__sep-3"></div>
+
     <div class="header__phone">
       <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="header__phone-number"><?php the_field('theme_phone', 'options') ?></a>
-      <div class="header__phone-time">круглосуточно,<br /> без выходных</div>
+      <div class="header__phone-time">круглосуточно<br /> без выходных</div>
     </div>
   </div>
 </header>
