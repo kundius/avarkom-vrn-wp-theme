@@ -85,12 +85,13 @@
   font-size: 60px;
   font-weight: 800;
   color: #4e4e4e;
+  display: block;
 }
 
 .intro-body__desc {
-  line-height: 22px;
+  line-height: 1;
   background-color: rgba(255, 255, 255, 0.6);
-  padding: 10px;
+  padding: 3px 10px;
   border-radius: 11px;
   color: #fb8624;
   font-size: 16px;
