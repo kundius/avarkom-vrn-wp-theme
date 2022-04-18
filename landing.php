@@ -263,25 +263,27 @@ Template Name: Главная
                 </div>
                 
                 <div class="reviews-preview__content">
+                  <div class="reviews-date">
+                    <?php echo $reviews[0]['date'] ?>
+                  </div>
+
                   <div
-                    class="reviews-preview__content-video"
+                    class="reviews-video"
                     style="display: <?php echo ($reviews[0]['video'] ? 'block' : 'none') ?>"
                   >
                     <?php echo $reviews[0]['video'] ?>
                   </div>
 
-                  <div class="reviews-preview__content-text">
+                  <div class="reviews-excerpt">
                     <?php echo $reviews[0]['excerpt'] ?>
                   </div>
 
-                  <div
-                    class="reviews-preview__content-more"
+                  <button
+                    class="reviews-more"
                     style="display: <?php echo ($reviews[0]['content'] ? 'block' : 'none') ?>"
                   >
-                    <button class="reviews-more">
-                      читать отзыв полностью
-                    </button>
-                  </div>
+                    читать отзыв полностью
+                  </button>
 
                   <div class="reviews-nav">
                     <button class="reviews-nav__left"></button>
