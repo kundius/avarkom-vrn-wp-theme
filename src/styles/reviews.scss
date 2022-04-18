@@ -6,6 +6,7 @@
   max-width: 100%;
   padding-top: 57px;
   padding-bottom: 25px;
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 0%, rgb(0,0,0) 100%);
 
   @include below(sm) {
     padding-top: 40px;
@@ -41,21 +42,6 @@
 
 .reviews_animation-in {
 
-}
-
-.reviews::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  right: 0;
-  background: #c7c7c7;
-  height: 400px;
-
-  @include below(sm) {
-    height: 100%;
-  }
 }
 
 .reviews__layout {
