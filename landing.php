@@ -251,10 +251,6 @@ Template Name: Главная
                 </div>
                 <?php endif; ?>
               </div>
-              <!-- <div class="reviews-nav">
-                <button class="reviews-nav__left"></button>
-                <button class="reviews-nav__right"></button>
-              </div> -->
             </div>
 
             <div class="reviews__layout-content">
@@ -262,16 +258,10 @@ Template Name: Главная
               <div class="reviews-preview">
                 <div class="reviews-preview__figure">
                   <div class="reviews-preview__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
-                  <div
-                    class="reviews-preview__figure-more"
-                    style="display: <?php echo ($reviews[0]['content'] ? 'block' : 'none') ?>"
-                  >
-                    <button class="reviews-preview__more" >
-                      читать отзыв полностью
-                      <span class="reviews-preview__more-arrow"></span>
-                    </button>
-                  </div>
+                  <div class="reviews-preview__figure-title"><?php echo $reviews[0]['name'] ?></div>
+                  <div class="reviews-preview__figure-desc"><?php echo $reviews[0]['description'] ?></div>
                 </div>
+                
                 <div class="reviews-preview__content">
                   <div
                     class="reviews-preview__content-video"
@@ -279,8 +269,23 @@ Template Name: Главная
                   >
                     <?php echo $reviews[0]['video'] ?>
                   </div>
+
                   <div class="reviews-preview__content-text">
                     <?php echo $reviews[0]['excerpt'] ?>
+                  </div>
+
+                  <div
+                    class="reviews-preview__content-more"
+                    style="display: <?php echo ($reviews[0]['content'] ? 'block' : 'none') ?>"
+                  >
+                    <button class="reviews-more">
+                      читать отзыв полностью
+                    </button>
+                  </div>
+
+                  <div class="reviews-nav">
+                    <button class="reviews-nav__left"></button>
+                    <button class="reviews-nav__right"></button>
                   </div>
                 </div>
               </div>
