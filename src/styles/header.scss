@@ -37,7 +37,7 @@
 
 .header__logo {
   display: block;
-  margin-right: 52px;
+  margin-right: 22px;
   
   @include below(md) {
     margin-left: 24px;
@@ -217,8 +217,8 @@
   .header__menu li a {
     color: #161718;
     font-size: 20px;
-    letter-spacing: 0.025em;
-    line-height: 50px;
+    letter-spacing: 0.01em;
+    line-height: 48px;
     position: relative;
     display: block;
     text-decoration: none;
@@ -378,6 +378,10 @@
     background-image: linear-gradient( 90deg, #8f54a8 0%, #7c4992 100%);
     box-shadow: 4.286px 2.575px 9px 0px rgba(133, 79, 156, 0.48);
   }
+
+  @include above(lg) {
+    display: none;
+  }
 }
 
 .messengers__item_whatsapp {
@@ -393,6 +397,10 @@
   &:hover {
     background-image: -ms-linear-gradient( 90deg, #29a51a 0%, #238f16 100%);
     box-shadow: 4.286px 2.575px 9px 0px rgba(41, 167, 26, 0.48);
+  }
+
+  @include above(lg) {
+    display: none;
   }
 }
 
