@@ -29,14 +29,6 @@
   }
 }
 
-.header__sep-1 {
-  flex-grow: 1;
-}
-
-.header__sep-2 {
-  flex-grow: 2;
-}
-
 .header__logo {
   display: block;
   margin-right: 52px;
@@ -383,4 +375,52 @@
     background-image: -ms-linear-gradient( 90deg, #29a51a 0%, #238f16 100%);
     box-shadow: 4.286px 2.575px 9px 0px rgba(41, 167, 26, 0.48);
   }
+}
+
+
+.header-messengers {
+
+}
+
+.header-messengers__label {
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  color: #1c1e21;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.header-messengers__buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.header-messengers__button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(211, 213, 219);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1c1e21;
+  height: 32px;
+  padding: 0 6px;
+  text-decoration: none;
+}
+
+.header-messengers__button svg {
+  margin-left: -3px;
+  margin-right: 3px;
+}
+
+.header-messengers__button_whatsapp svg {
+  margin-right: -3px;
+}
+
+.header-messengers__button:hover {
+  border-color: rgb(180, 182, 187);
+  background-image: linear-gradient(0, #ececec 0%, #ffffff 50%, #ececec 100%);
 }

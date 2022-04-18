@@ -1,14 +1,16 @@
 <header class="header">
   <div class="ui-container ui-container_large header__container">
     <button class="header__toggle"></button>
+
     <a href="/" class="header__logo">
       <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" alt="<?php bloginfo('name') ?>" />
     </a>
+
     <ul class="header__about">
       <li>Выезд за 5 минут на место</li>
       <li>Оформление ДТП в Воронеже</li>
     </ul>
-    <div class="header__sep-1"></div>
+  
     <ul class="header__menu">
       <li>
         <a href="#services">Услуги</a>
@@ -23,7 +25,19 @@
         <a href="#contacts">Контакты</a>
       </li>
     </ul>
-    <div class="header__sep-2"></div>
+
+    <div class="header-messengers">
+      <div class="header-messengers__label">Задайте вопрос напрямую в:</div>
+      <div class="header-messengers__buttons">
+        <a class="header-messengers__button header-messengers__button_whatsapp" href="whatsapp://send?text=Hello&phone=<?php echo preg_replace("/[ \(\)\-]/", "", get_field('phone_whatsapp', 'options')) ?>">
+          WhatsApp
+        </a>
+        <a class="header-messengers__button header-messengers__button_telegram" href="tg://resolve?domain=<?php echo preg_replace("/[ \(\)\-]/", "", get_field('phone_telegram', 'options')) ?>">
+          Telegram
+        </a>
+      </div>
+    </div>
+
     <div class="header__phone">
       <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="header__phone-number"><?php the_field('theme_phone', 'options') ?></a>
       <div class="header__phone-time">круглосуточно, без выходных</div>
