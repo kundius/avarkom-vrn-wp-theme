@@ -3,7 +3,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 51px 0 79px 0;
+  padding: 44px 0 79px 0;
   overflow: hidden;
 
   &::after {
@@ -35,9 +35,9 @@
   font-size: 30px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: #969696;
+  color: #ffffff;
   font-weight: bold;
-  margin-bottom: 55px;
+  margin-bottom: 80px;
 
   @include below(sm) {
     font-size: 26px;
@@ -81,14 +81,67 @@
     display: block;
     padding-bottom: 100%;
   }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: 100%;
+    width: 12px;
+    height: 37px;
+    border-left: 2px solid #6cd8ff;
+    border-top: 2px solid #6cd8ff;
+    border-radius: 6px 0 0 0;
+  }
+}
+
+.additional-item_first::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: 100%;
+  width: 12px;
+  height: 37px;
+  border-left: 2px solid #6cd8ff;
+  border-top: 2px solid #6cd8ff;
+  border-radius: 6px 0 0 0;
+  transform: translateX(-50%);
+}
+
+.additional-item_middle::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: 100%;
+  width: 2px;
+  height: 54px;
+  background: #6cd8ff;
+  transform: translateX(-50%);
+}
+
+.additional-item_last::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: 100%;
+  width: 12px;
+  height: 37px;
+  border-right: 2px solid #6cd8ff;
+  border-top: 2px solid #6cd8ff;
+  border-radius: 6px 0 0 0;
+  transform: translateX(-50%);
 }
 
 .additional-item__number {
-  font-size: calc(310em / 16);
+  font-size: calc(260em / 16);
   line-height: 1;
   color: #fff;
-  opacity: .55;
-  font-weight: 900;
+  opacity: .40;
+  font-weight: 100;
   position: absolute;
   left: calc(-35em / 310);
   top: calc(-64em / 310);
@@ -98,9 +151,10 @@
 }
 
 .additional-item__title {
-  font-size: calc(18em / 16);
+  font-size: calc(24em / 16);
   letter-spacing: 0.075em;
-  color: #3c3c3c;
+  color: #ffffff;
+  font-weight: bold;
   line-height: calc(30em / 18);
   position: absolute;
   top: calc(30em / 18);

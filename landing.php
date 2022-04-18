@@ -158,7 +158,7 @@ Template Name: Главная
           <div class="additional__title">Кроме того, выполняем:</div>
           <div class="additional__grid">
             <div class="additional__grid-cell">
-              <div class="additional-item">
+              <div class="additional-item additional-item_first">
                 <div class="additional-item__number">1</div>
                 <div class="additional-item__title">Бесплатная консультация</div>
                 <div class="additional-item__image">
@@ -171,7 +171,7 @@ Template Name: Главная
               </div>
             </div>
             <div class="additional__grid-cell">
-              <div class="additional-item">
+              <div class="additional-item additional-item_middle">
                 <div class="additional-item__number">2</div>
                 <div class="additional-item__title">Юридическое сопровождение</div>
                 <div class="additional-item__image">
@@ -184,7 +184,7 @@ Template Name: Главная
               </div>
             </div>
             <div class="additional__grid-cell">
-              <div class="additional-item">
+              <div class="additional-item additional-item_last">
                 <div class="additional-item__number">3</div>
                 <div class="additional-item__title">Оценка ущерба</div>
                 <div class="additional-item__image">
