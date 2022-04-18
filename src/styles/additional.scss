@@ -166,6 +166,17 @@
   text-align: center;
   transform: translateX(-50%);
 
+  &::after {
+    content: '';
+    height: 9px;
+    width: 52px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background: #0088e0;
+  }
+
   @include below(md) {
     font-size: calc(28em / 16);
     line-height: calc(30em / 28);
