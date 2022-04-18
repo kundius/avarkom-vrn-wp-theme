@@ -54,7 +54,7 @@
 .intro-body {
   background-color: rgba(215, 215, 215, 0.2);
   display: flex;
-  border: 1px solid rgba(215, 215, 215, 0.2);
+  border: 1px solid transparent;
   justify-content: space-between;
 
   @include below(sm) {
@@ -69,6 +69,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-left: 30px;
   min-height: 100%;
