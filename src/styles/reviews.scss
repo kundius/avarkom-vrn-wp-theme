@@ -4,8 +4,8 @@
   width: 1556px;
   margin: 0 auto;
   max-width: 100%;
-  padding-top: 57px;
-  padding-bottom: 25px;
+  padding-top: 127px;
+  padding-bottom: 39px;
   background-image: radial-gradient(circle at 40% 100%, #159afd 0%, #0e67a9 100%);
 
   @include below(sm) {
@@ -57,162 +57,35 @@
   }
 }
 
-.reviews__layout-info {
-  width: 326px;
-  margin-left: 48px;
-  flex-shrink: 0;
-  padding-top: 6px;
-
-  @include below(md) {
-    width: 260px;
-    margin-left: 30px;
-  }
-
-  @include below(sm) {
-    margin-left: 0;
-    width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-  }
+.reviews__layout-headline {
+  width: 300px;
+  margin-right: 75px;
+  margin-top: 64px;
 }
 
-.reviews-info__title {
+.reviews-headline {
+
+}
+
+.reviews-headline__title {
+  font-weight: bold;
   font-size: 24px;
-  text-transform: uppercase;
-  color: #fff;
   line-height: 1;
   letter-spacing: 0.075em;
-  font-weight: bold;
-  margin-bottom: 53px;
-
-  @include below(sm) {
-    margin-bottom: 40px;
-    text-transform: none;
-    font-size: 26px;
-    text-align: center;
-  }
-}
-
-.reviews-info__date {
-  font-size: 11px;
+  text-transform: uppercase;
   color: #fff;
-  letter-spacing: 0.05em;
-  line-height: 21px;
-  display: inline-block;
-  padding: 0 9px;
-  border-radius: 12px;
-  background: #195ab8;
-
-  // .reviews_animation-out & {
-  //   animation: animationOut 400ms ease;
-  //   animation-fill-mode: forwards;
-  // }
-  
-  // .reviews_animation-in & {
-  //   animation: animationIn 400ms ease;
-  //   animation-fill-mode: forwards;
-  // }
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.369);
 }
 
-.reviews-info__group {
-  height: 112px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  overflow: hidden;
-
-  @include below(sm) {
-    height: auto;
-    margin-bottom: 32px;
-    // text-align: center;
-  }
-}
-
-.reviews-info__more {
-  margin-top: 16px;
-  font-size: 14px;
-  color: #39c;
-  text-decoration: underline;
-  letter-spacing: 0.025em;
-  display: inline-flex;
-  align-items: center;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  display: inline-block;
-
-  &:hover {
-    color: #ff8825;
-  }
-
-  @include above(sm) {
-    display: none;
-  }
-}
-
-.reviews-info__image {
-  width: 100px;
-  height: 100px;
-  // margin-bottom: 12px;
-  margin-right: 16px;
-  float: left;
-  background-color: #e3e3e3;
-  border-radius: 50%;
-  background-position: 50% 50%;
-  background-size: cover;
-
-  .reviews_animation-out & {
-    animation: animationOut 400ms ease;
-    animation-fill-mode: forwards;
-  }
-  
-  .reviews_animation-in & {
-    animation: animationIn 400ms ease;
-    animation-fill-mode: forwards;
-  }
-
-  @include above(sm) {
-    display: none;
-  }
-}
-
-.reviews-info__name {
-  color: #323541;
+.reviews-headline__desc {
   font-size: 18px;
-  line-height: 1;
-  font-weight: bold;
-
-  .reviews_animation-out & {
-    animation: animationOut 400ms ease;
-    animation-fill-mode: forwards;
-  }
-  
-  .reviews_animation-in & {
-    animation: animationIn 400ms ease;
-    animation-fill-mode: forwards;
-  }
+  line-height: 1.67;
+  color: #fff;
+  padding-top: 15px;
 }
 
-.reviews-info__desc {
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.025em;
-  color: #3a3a3a;
-  margin-top: 7px;
-
-  .reviews_animation-out & {
-    animation: animationOut 400ms ease;
-    animation-fill-mode: forwards;
-  }
-  
-  .reviews_animation-in & {
-    animation: animationIn 400ms ease;
-    animation-fill-mode: forwards;
-  }
-}
-
-.reviews-info__nav {
+.reviews-nav {
   display: flex;
 
   @include below(sm) {
@@ -220,8 +93,8 @@
   }
 }
 
-.reviews-info__nav-left,
-.reviews-info__nav-right {
+.reviews-nav__left,
+.reviews-nav__right {
   border: 2px solid #9a9a9a;
   height: 48px;
   width: 60px;
@@ -243,7 +116,7 @@
   }
 }
 
-.reviews-info__nav-left {
+.reviews-nav__left {
   border-radius: 24px 0 0 24px;
   margin-right: -1px;
 
@@ -265,7 +138,7 @@
   }
 }
 
-.reviews-info__nav-right {
+.reviews-nav__right {
   border-radius: 0 24px 24px 0;
   margin-left: -1px;
 
@@ -287,29 +160,24 @@
   }
 }
 
-.reviews-info__send {
-  margin-left: -30px;
-  margin-right: -10px;
-  margin-top: 49px;
+.reviews__send {
+  margin-top: 29px;
+  display: flex;
+  justify-content: center;
   
   .ui-button-primary {
-    width: 100%;
+    // width: 100%;
     letter-spacing: 0.2em;
     font-size: 15px;
   }
 
   @include below(md) {
-    margin-left: -20px;
-    margin-top: 40px;
-    .reviews-info__send-pronoun {
+    .reviews-reviews__send-pronoun {
       display: none;
     }
   }
 
   @include below(sm) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
   }
 }
 

@@ -238,6 +238,25 @@ Template Name: Главная
       <section class="reviews" data-scrollspy-section id="reviews">
         <div class="ui-container">
           <div class="reviews__layout">
+            <div class="reviews__layout-headline">
+              <div class="reviews-headline">
+                <?php if ($title = get_field('theme_reviews_title', 'options')): ?>
+                <div class="reviews-headline__title">
+                  <?php echo $title ?>
+                </div>
+                <?php endif; ?>
+                <?php if ($desc = get_field('theme_reviews_desc', 'options')): ?>
+                <div class="reviews-headline__desc">
+                  <?php echo $desc ?>
+                </div>
+                <?php endif; ?>
+              </div>
+              <!-- <div class="reviews-nav">
+                <button class="reviews-nav__left"></button>
+                <button class="reviews-nav__right"></button>
+              </div> -->
+            </div>
+
             <div class="reviews__layout-content">
               
               <div class="reviews-preview">
@@ -265,40 +284,14 @@ Template Name: Главная
                   </div>
                 </div>
               </div>
-            
-            </div>
 
-            <div class="reviews__layout-info">
-              <?php if ($title = get_field('theme_reviews_title', 'options')): ?>
-              <div class="reviews-info__title">
-                <?php echo $title ?>
-              </div>
-              <?php endif; ?>
-              <div class="reviews-info__image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
-              <div class="reviews-info__date">
-                <?php echo $reviews[0]['date'] ?>
-              </div>
-              <div class="reviews-info__group">
-                <div class="reviews-info__name">
-                  <?php echo $reviews[0]['name'] ?>
-                </div>
-                <div class="reviews-info__desc">
-                  <?php echo $reviews[0]['description'] ?>
-                </div>
-                <button class="reviews-info__more">
-                  читать отзыв полностью
-                </button>
-              </div>
-              <div class="reviews-info__nav">
-                <button class="reviews-info__nav-left"></button>
-                <button class="reviews-info__nav-right"></button>
-              </div>
-              <div class="reviews-info__send">
+              <div class="reviews__send">
                 <button class="ui-button-primary" data-hystmodal="#modal-review-form">
-                  Добавьте<span class="reviews-info__send-pronoun"> свой</span> отзыв
+                  Добавьте<span class="reviews-reviews__send-pronoun"> свой</span> отзыв
                   <span class="ui-button-primary__plus"></span>
                 </button>
               </div>
+            
             </div>
           </div>
         </div>
