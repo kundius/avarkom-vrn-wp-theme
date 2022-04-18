@@ -126,6 +126,7 @@
   height: 26px;
   display: block;
   margin-right: 4px;
+  flex-shrink: 0;
 }
 
 @include above(md) {
