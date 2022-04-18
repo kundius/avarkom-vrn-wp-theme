@@ -283,7 +283,7 @@ Template Name: Главная
                   class="reviews-preview__content"
                   style="display: <?php echo ($reviews[0]['excerpt'] ? 'block' : 'none') ?>"
                 >
-                  <div class="reviews-excerpt">
+                  <div class="reviews-content">
                     <?php echo $reviews[0]['excerpt'] ?>
                   </div>
                 </div>
@@ -321,17 +321,35 @@ Template Name: Главная
               
       <div class="reviews-details">
         <button class="reviews-details__close"></button>
+
         <div class="reviews-details__figure">
-          <div class="reviews-details__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
+          <div class="reviews-figure">
+            <div class="reviews-figure__image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
+            <div class="reviews-figure__title"><?php echo $reviews[0]['name'] ?></div>
+            <div class="reviews-figure__desc"><?php echo $reviews[0]['description'] ?></div>
+          </div>
         </div>
-        <div class="reviews-details__content">
-          <div
-            class="reviews-details__content-video"
-            style="display: <?php echo ($reviews[0]['video'] ? 'block' : 'none') ?>"
-          >
+        
+        <div class="reviews-details__date">
+          <div class="reviews-date">
+            <?php echo $reviews[0]['date'] ?>
+          </div>
+        </div>
+
+        <div
+          class="reviews-details__video"
+          style="display: <?php echo ($reviews[0]['video'] ? 'block' : 'none') ?>"
+        >
+          <div class="reviews-video">
             <?php echo $reviews[0]['video'] ?>
           </div>
-          <div class="reviews-details__content-text">
+        </div>
+
+        <div
+          class="reviews-details__content"
+          style="display: <?php echo ($reviews[0]['excerpt'] ? 'block' : 'none') ?>"
+        >
+          <div class="reviews-content">
             <?php echo $reviews[0]['content'] ?>
           </div>
         </div>

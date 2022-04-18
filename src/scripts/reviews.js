@@ -9,7 +9,6 @@ function init (reviews) {
 
   // const infoButtonMore = document.querySelector('.reviews-info__more')
   // const infoImage = document.querySelector('.reviews-info__image')
-  // const buttonClose = document.querySelector('.reviews-details__close')
   const buttonLeft = document.querySelectorAll('.reviews-nav__left') || []
   const buttonRight = document.querySelectorAll('.reviews-nav__right') || []
 
@@ -17,10 +16,11 @@ function init (reviews) {
   const previewDescription = document.querySelector('.reviews-figure__desc')
   const previewMore = preview.querySelector('.reviews-more')
   const previewDate = preview.querySelector('.reviews-date')
-  const previewExcerpt = preview.querySelector('.reviews-excerpt')
+  const previewExcerpt = preview.querySelector('.reviews-content')
   const previewImage = preview.querySelector('.reviews-figure__image')
   const previewVideo = preview.querySelector('.reviews-video')
   
+  const detailsClose = details.querySelector('.reviews-details__close')
   // const detailsText = document.querySelector('.reviews-details__content-text')
   // const detailsImage = document.querySelector('.reviews-details__figure-image')
   // const detailsVideo = document.querySelector('.reviews-details__content-video')
@@ -131,9 +131,9 @@ function init (reviews) {
   //   modal.open("#modal-review");
   // })
 
-  // buttonClose.addEventListener('click', () => {
-  //   hideDetails()
-  // })
+  detailsClose.addEventListener('click', () => {
+    hideDetails()
+  })
 }
 
 if (typeof theme_reviews) {
