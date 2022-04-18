@@ -319,6 +319,9 @@
   font-size: 14px;
   line-height: 1;
   border: none;
+  &:hover {
+    color: #ff8a00;
+  }
 }
 
 .reviews-details {
