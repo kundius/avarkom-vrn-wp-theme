@@ -108,27 +108,44 @@ Template Name: Главная
 
           <div class="intro-advantages">
             <div class="intro-advantages__item">
-              <div class="intro-advantages__item-title">
-                Оперативно -
+              <div class="intro-advantages__item-icon">
+                <img src="<?php bloginfo('template_url') ?>/dist/images/icon-advantages-1.svg" alt="" />
               </div>
-              <div class="intro-advantages__item-desc">
-                выезд на место за 5 мин
-              </div>
-            </div>
-            <div class="intro-advantages__item">
-              <div class="intro-advantages__item-title">
-                Воронеж -
-              </div>
-              <div class="intro-advantages__item-desc">
-                комиссары во всех районах
+              <div class="intro-advantages__item-body">
+                <div class="intro-advantages__item-title">
+                  Оперативно
+                </div>
+                <div class="intro-advantages__item-desc">
+                  выезд на место ДТП за&nbsp;5&nbsp;минут
+                </div>
               </div>
             </div>
             <div class="intro-advantages__item">
-              <div class="intro-advantages__item-title">
-                Выгодно -
+              <div class="intro-advantages__item-icon">
+                <img src="<?php bloginfo('template_url') ?>/dist/images/icon-advantages-2.svg" alt="" />
               </div>
-              <div class="intro-advantages__item-desc">
-                оформление европротокола бесплатно
+              <div class="intro-advantages__item-body">
+                <div class="intro-advantages__item-title">
+                  Воронеж
+                </div>
+                <div class="intro-advantages__item-desc">
+                  Наши комиссары<br />
+                  во всех районах
+                </div>
+              </div>
+            </div>
+            <div class="intro-advantages__item">
+              <div class="intro-advantages__item-icon">
+                <img src="<?php bloginfo('template_url') ?>/dist/images/icon-advantages-3.svg" alt="" />
+              </div>
+              <div class="intro-advantages__item-body">
+                <div class="intro-advantages__item-title">
+                  Выгодно
+                </div>
+                <div class="intro-advantages__item-desc">
+                  оформление<br />
+                  европротокола бесплатно
+                </div>
               </div>
             </div>
           </div>
