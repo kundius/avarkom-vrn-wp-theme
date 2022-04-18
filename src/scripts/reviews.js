@@ -12,18 +12,21 @@ function init (reviews) {
   const buttonLeft = document.querySelectorAll('.reviews-nav__left') || []
   const buttonRight = document.querySelectorAll('.reviews-nav__right') || []
 
-  const previewName = document.querySelector('.reviews-figure__title')
-  const previewDescription = document.querySelector('.reviews-figure__desc')
+  const previewName = preview.querySelector('.reviews-figure__title')
+  const previewDescription = preview.querySelector('.reviews-figure__desc')
   const previewMore = preview.querySelector('.reviews-more')
   const previewDate = preview.querySelector('.reviews-date')
-  const previewExcerpt = preview.querySelector('.reviews-content')
+  const previewContent = preview.querySelector('.reviews-content')
   const previewImage = preview.querySelector('.reviews-figure__image')
   const previewVideo = preview.querySelector('.reviews-video')
   
   const detailsClose = details.querySelector('.reviews-details__close')
-  // const detailsText = document.querySelector('.reviews-details__content-text')
-  // const detailsImage = document.querySelector('.reviews-details__figure-image')
-  // const detailsVideo = document.querySelector('.reviews-details__content-video')
+  const detailsImage = details.querySelector('.reviews-figure__image')
+  const detailsVideo = details.querySelector('.reviews-video')
+  const detailsDate = details.querySelector('.reviews-date')
+  const detailsName = details.querySelector('.reviews-figure__title')
+  const detailsDescription = details.querySelector('.reviews-figure__desc')
+  const detailsContent = details.querySelector('.reviews-content')
 
   let duration = 400
   let active = 0
@@ -38,18 +41,22 @@ function init (reviews) {
       previewName.innerHTML = reviews[index].name
       previewDescription.innerHTML = reviews[index].description
       previewDate.innerHTML = reviews[index].date
-      previewExcerpt.innerHTML = reviews[index].excerpt
+      previewContent.innerHTML = reviews[index].excerpt
       previewVideo.innerHTML = reviews[index].video
       previewImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
-      previewExcerpt.parentNode.style.display = reviews[index].excerpt ? 'block' : 'none'
+      previewContent.parentNode.style.display = reviews[index].excerpt ? 'block' : 'none'
       previewVideo.parentNode.style.display = reviews[index].video ? 'block' : 'none'
       previewMore.parentNode.style.display = reviews[index].content ? 'block' : 'none'
-      
-      // detailsText.innerHTML = reviews[index].content
-      // detailsVideo.innerHTML = reviews[index].video
-      // detailsVideo.style.display = reviews[index].video ? 'block' : 'none'
-      // detailsImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
-      
+
+      detailsName.innerHTML = reviews[index].name
+      detailsDescription.innerHTML = reviews[index].description
+      detailsDate.innerHTML = reviews[index].date
+      detailsContent.innerHTML = reviews[index].content
+      detailsVideo.innerHTML = reviews[index].video
+      detailsImage.style.backgroundImage = reviews[index].image ? `url('${reviews[index].image.url}')` : null
+      detailsContent.parentNode.style.display = reviews[index].content ? 'block' : 'none'
+      detailsVideo.parentNode.style.display = reviews[index].video ? 'block' : 'none'
+
       wrapper.classList.remove('reviews_animation-out')
       wrapper.classList.add('reviews_animation-in')
 
