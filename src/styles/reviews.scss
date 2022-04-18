@@ -100,7 +100,7 @@
   height: 36px;
   width: 45px;
   text-align: center;
-  background: #e3e3e3;
+  background: transparent;
   position: relative;
   cursor: pointer;
   position: relative;
@@ -201,6 +201,44 @@
   }
 }
 
+.reviews-preview__figure {
+  float: right;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 40px;
+
+  @include below(lg) {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 200px;
+  }
+
+  @include below(md) {
+    margin: 0 auto 20px;
+    float: none;
+  }
+}
+
+.reviews-preview__date {
+  margin-bottom: 15px;
+}
+
+.reviews-preview__video {
+
+}
+
+.reviews-preview__content {
+
+}
+
+.reviews-preview__more {
+  margin-top: 15px;
+}
+
+.reviews-preview__nav {
+  margin-top: 25px;
+}
+
 .reviews-video {
   overflow: hidden;
   margin-bottom: 16px;
@@ -229,6 +267,7 @@
   color: #fff;
   letter-spacing: 0.05em;
   font-weight: 300;
+  background: #195ab8;
 }
 
 .reviews-excerpt {
@@ -252,24 +291,9 @@
 }
 
 .reviews-figure {
-  float: right;
-  width: 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 40px;
-  margin-left: 40px;
-
-  @include below(lg) {
-    margin-top: 10px;
-    margin-left: 20px;
-    width: 200px;
-  }
-
-  @include below(md) {
-    margin: 0 auto 20px;
-    float: none;
-  }
 }
 
 .reviews-figure__image {
@@ -307,6 +331,10 @@
 
 .reviews-figure__desc {
   text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  color: #3a3a3a;
+  letter-spacing: 0.025em;
 }
 
 .reviews-more {
@@ -319,6 +347,8 @@
   font-size: 14px;
   line-height: 1;
   border: none;
+  cursor: pointer;
+
   &:hover {
     color: #ff8a00;
   }

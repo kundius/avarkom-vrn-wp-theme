@@ -256,35 +256,45 @@ Template Name: Главная
             <div class="reviews__layout-content">
               
               <div class="reviews-preview">
-                <div class="reviews-figure">
-                  <div class="reviews-figure__image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
-                  <div class="reviews-figure__title"><?php echo $reviews[0]['name'] ?></div>
-                  <div class="reviews-figure__desc"><?php echo $reviews[0]['description'] ?></div>
+                <div class="reviews-preview__figure">
+                  <div class="reviews-figure">
+                    <div class="reviews-figure__image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
+                    <div class="reviews-figure__title"><?php echo $reviews[0]['name'] ?></div>
+                    <div class="reviews-figure__desc"><?php echo $reviews[0]['description'] ?></div>
+                  </div>
                 </div>
                 
-                <div class="reviews-preview__content">
+                <div class="reviews-preview__date">
                   <div class="reviews-date">
                     <?php echo $reviews[0]['date'] ?>
                   </div>
+                </div>
 
+                <div class="reviews-preview__video">
                   <div
                     class="reviews-video"
                     style="display: <?php echo ($reviews[0]['video'] ? 'block' : 'none') ?>"
                   >
                     <?php echo $reviews[0]['video'] ?>
                   </div>
+                </div>
 
+                <div class="reviews-preview__content">
                   <div class="reviews-excerpt">
                     <?php echo $reviews[0]['excerpt'] ?>
                   </div>
+                </div>
 
+                <div class="reviews-preview__more">
                   <button
                     class="reviews-more"
                     style="display: <?php echo ($reviews[0]['content'] ? 'block' : 'none') ?>"
                   >
                     читать отзыв полностью
                   </button>
+                </div>
 
+                <div class="reviews-preview__nav">
                   <div class="reviews-nav">
                     <button class="reviews-nav__left"></button>
                     <button class="reviews-nav__right"></button>
