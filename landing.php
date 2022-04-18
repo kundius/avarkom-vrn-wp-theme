@@ -256,10 +256,10 @@ Template Name: Главная
             <div class="reviews__layout-content">
               
               <div class="reviews-preview">
-                <div class="reviews-preview__figure">
-                  <div class="reviews-preview__figure-image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
-                  <div class="reviews-preview__figure-title"><?php echo $reviews[0]['name'] ?></div>
-                  <div class="reviews-preview__figure-desc"><?php echo $reviews[0]['description'] ?></div>
+                <div class="reviews-figure">
+                  <div class="reviews-figure__image" style="background-image: url('<?php echo $reviews[0]['image']['url'] ?>')"></div>
+                  <div class="reviews-figure__title"><?php echo $reviews[0]['name'] ?></div>
+                  <div class="reviews-figure__desc"><?php echo $reviews[0]['description'] ?></div>
                 </div>
                 
                 <div class="reviews-preview__content">
