@@ -1,7 +1,42 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="35px" height="40px">
-<path fill-rule="evenodd"  fill="rgb(255, 203, 0)"
- d="M15.86,27.934 L15.86,14.638 L19.913,14.638 L19.913,23.137 L23.807,23.137 L23.807,27.934 L15.86,27.934 L15.86,27.934 ZM12.776,4.790 L12.776,0.6 L22.223,0.6 L22.223,4.790 L19.913,4.790 L19.913,5.396 C28.548,6.580 34.999,13.942 34.999,22.619 C34.999,32.221 27.164,40.7 17.499,40.7 C7.835,40.7 0.0,32.221 0.0,22.619 C0.0,13.942 6.452,6.580 15.86,5.396 L15.86,4.790 L12.776,4.790 L12.776,4.790 ZM17.499,35.211 C24.499,35.211 30.172,29.574 30.172,22.619 C30.172,15.665 24.499,10.28 17.499,10.28 C10.500,10.28 4.827,15.665 4.827,22.619 C4.827,29.574 10.500,35.211 17.499,35.211 L17.499,35.211 Z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="34.999001"
+   height="40.099998"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="icon-advantages-1.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="20.6"
+     inkscape:cx="17.475728"
+     inkscape:cy="11.674757"
+     inkscape:window-width="2560"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     fill-rule="evenodd"
+     fill="#ffcb00"
+     d="M 15.86,27.334 V 14.038 h 4.053 v 8.499 h 3.894 v 4.797 z M 12.776,4.19 V 0 h 9.447 v 4.19 h -2.31 v 0.606 c 8.635,1.184 15.086,8.546 15.086,17.223 0,9.602 -7.835,18.081 -17.5,18.081 C 7.835,40.1 0,31.621 0,22.019 0,13.342 6.452,5.98 15.86,4.796 V 4.19 Z m 4.723,30.421 c 7,0 12.673,-5.637 12.673,-12.592 0,-6.954 -5.673,-12.339 -12.673,-12.339 -6.999,0 -12.672,5.385 -12.672,12.339 0,6.955 5.673,12.592 12.672,12.592 z"
+     id="path2" />
 </svg>
