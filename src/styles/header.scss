@@ -1,0 +1,386 @@
+.header {
+  z-index: 250;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: rgb(251, 251, 251);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.13);
+}
+
+.header-placeholder {
+  height: 64px;
+
+  @include below(sm) {
+    height: 50px;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  @include below(sm) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.header__sep-1 {
+  flex-grow: 1;
+}
+
+.header__sep-2 {
+  flex-grow: 2;
+}
+
+.header__logo {
+  display: block;
+  margin-right: 52px;
+  
+  @include below(md) {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  @include below(sm) {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 80px;
+  }
+}
+
+.header__logo img {
+  display: block;
+  max-width: 100%;
+}
+
+.header__about {
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 1;
+  font-weight: bold;
+  color: #161718;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @include below(lg) {
+    display: none;
+  }
+}
+
+.header__about li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.header__about li + li {
+  margin-top: 8px;
+}
+
+.header__about li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ff8825;
+}
+
+.header__phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__phone-number {
+  font-size: 20px;
+  line-height: 1;
+  color: #161718;
+  text-decoration: none;
+  font-weight: bold;
+
+  @include below(sm) {
+    font-size: 18px;
+  }
+}
+
+.header__phone-time {
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  margin-top: 3px;
+
+  @include below(sm) {
+    font-size: 10px;
+    letter-spacing: .035em;
+  }
+}
+
+@include above(md) {
+  .header__toggle {
+    display: none;
+  }
+}
+
+@include below(md) {
+  .header__toggle {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    position: relative;
+    background: #ff8825;
+    border: none;
+    color: #fff;
+    border-radius: 12px;
+  
+    @include below(sm) {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+  }
+  .header__toggle::before {
+    content: "";
+    width: 28px;
+    height: 4px;
+    background: currentColor;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,calc(-50% + 8px));
+    border-radius: 2px;
+    transition: .3s ease-out;
+  
+    @include below(sm) {
+      width: 24px;
+    }
+  }
+  .header__toggle::after {
+    content: "";
+    width: 28px;
+    height: 4px;
+    background: currentColor;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,calc(-50% - 8px));
+    border-radius: 2px;
+    transition: .3s ease-out;
+  
+    @include below(sm) {
+      width: 24px;
+    }
+  }
+  .header__toggle_opened::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .header__toggle_opened::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+}
+
+@include above(md) {
+  .header__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  .header__menu li {
+  }
+
+  .header__menu li + li {
+    margin-left: 40px;
+  }
+
+  .header__menu li a {
+    color: #161718;
+    font-size: 20px;
+    letter-spacing: 0.025em;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    text-decoration: none;
+  }
+
+  .header__menu li a::after {
+    content: '';
+    width: 41px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff8a00;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  .header__menu li a:hover::after {
+    opacity: 1;
+  }
+
+  .header__menu li a.active {
+    color: #000;
+  }
+
+  .header__menu li a.active::after {
+    opacity: 1;
+  }
+}
+
+@include below(md) {
+  .header__menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fbfbfb;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 13%);
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+
+    &_opened {
+      display: block;
+    }
+  }
+
+  .header__menu li {
+  }
+
+  .header__menu li + li {
+    margin-top: 16px;
+  }
+
+  .header__menu li a {
+    color: #161718;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    line-height: 2;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    text-decoration: none;
+  }
+
+  .header__menu li a.active {
+    color: #ff8825;
+  }
+}
+
+.messengers {
+  position: fixed;
+  top: 108px;
+  left: calc(50% + 662px);
+  display: flex;
+  flex-direction: column;
+  z-index: 250;
+  
+  @media (max-width: 1490px) {
+    left: auto;
+    right: 12px;
+  }
+
+  @include below(md) {
+    top: 80px;
+  }
+
+  @include below(sm) {
+    top: 60px;
+    right: 8px;
+  }
+}
+
+.messengers__item {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    background-size: cover;
+    background-position: 50% 50%;
+    display: block;
+  }
+
+  & + .messengers__item {
+    margin-top: 8px;
+  }
+
+  @include below(md) {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include below(sm) {
+    width: 36px;
+    height: 36px;
+    &::before {
+      transform: scale(0.8);
+    }
+  }
+}
+
+.messengers__item_phone {
+  background: #d18972;
+
+  &::before {
+    background-image: url('../images/icon-messengers-phone.svg');
+    width: 21px;
+    height: 27px;
+  }
+
+  &:hover {
+    background-image: linear-gradient( 90deg, #fc7605 0%, #da6604 100%);
+    box-shadow: 4.286px 2.575px 9px 0px rgba(238, 111, 5, 0.48);
+  }
+}
+
+.messengers__item_viber {
+  background: #745084;
+
+  &::before {
+    background-image: url('../images/icon-messengers-viber.svg');
+    width: 33px;
+    height: 34px;
+    transform: translate(1px, 2px);
+  }
+
+  &:hover {
+    background-image: linear-gradient( 90deg, #8f54a8 0%, #7c4992 100%);
+    box-shadow: 4.286px 2.575px 9px 0px rgba(133, 79, 156, 0.48);
+  }
+}
+
+.messengers__item_whatsapp {
+  background: #61915f;
+
+  &::before {
+    background-image: url('../images/icon-messengers-whatsapp.svg');
+    width: 32px;
+    height: 33px;
+    transform: translate(1px, 2px);
+  }
+
+  &:hover {
+    background-image: -ms-linear-gradient( 90deg, #29a51a 0%, #238f16 100%);
+    box-shadow: 4.286px 2.575px 9px 0px rgba(41, 167, 26, 0.48);
+  }
+}

@@ -1,0 +1,359 @@
+.footer {
+  background: #eeedf3;
+  position: relative;
+  z-index: 200;
+}
+
+.footer__primary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.529);
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include below(sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+  @include below(sm) {
+    display: none;
+  }
+}
+
+.footer__menu li + li {
+  margin-left: 15px;
+}
+
+.footer__menu li a {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  color: #707070;
+  display: block;
+  line-height: 22px;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 11px;
+  text-decoration: none;
+}
+
+.footer__menu li a:hover {
+  color: #000;
+}
+
+.footer__menu li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33px;
+  height: 8px;
+  background: #ff8a00;
+  border-radius: 3px;
+  display: none;
+}
+
+.footer__menu li a:hover::after {
+  display: block;
+}
+
+.footer__menu li a.active {
+  background: #ff8a00;
+  color: #fff;
+}
+
+.footer__menu li a.active::after {
+  display: none;
+}
+
+.footer__phone {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: -0.005em;
+  color: #2e343c;
+  display: inline-block;
+  position: relative;
+  padding-right: 24px;
+}
+
+.footer__phone-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url('../images/icon-phone.png') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.footer__secondary {
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include below(md) {
+    flex-wrap: wrap;
+  }
+
+  @include below(sm) {
+    padding: 12px 0;
+  }
+}
+
+.footer__copyright {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+  letter-spacing: 0.05em;
+  width: 360px;
+
+  @include below(sm) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__copyright span {
+  position: relative;
+  padding-left: 6px;
+}
+
+.footer__copyright span::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer__links {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include below(md) {
+    order: -1;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  @include below(sm) {
+    flex-direction: column;
+  }
+}
+
+.footer__links li + li {
+  margin-top: 15px;
+
+  @include below(md) {
+    margin-top: 0;
+  }
+
+  @include below(sm) {
+    margin-top: 8px;
+  }
+}
+
+.footer__links li a {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  padding: 5px 10px;
+  border-radius: 11px;
+}
+
+.footer__links li a:hover {
+  color: #fff;
+  background: #808083;
+}
+
+.footer__counters {
+  width: 360px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  @include below(lg) {
+    width: auto;
+  }
+
+  @include below(sm) {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.footer__counters-item + .footer__counters-item {
+  margin-left: 40px;
+}
+
+.footer-creator {
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.footer-creator:hover {
+  display: inline-block;
+  opacity: 1;
+}
+
+.footer-creator img {
+  display: block;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 180px;
+  left: calc(50% + 662px);
+  display: flex;
+  flex-direction: column;
+  z-index: 250;
+  border-radius: 50%;
+  background-color: rgba(247, 247, 247, 0.502);
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.09);
+  width: 74px;
+  height: 74px;
+  cursor: pointer;
+  border: none;
+  visibility: hidden;
+  opacity: 0;
+
+  &_visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: rgba(247, 247, 247, 0.8);
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.22);
+  }
+
+  @media (max-width: 1490px) {
+    left: auto;
+    right: 12px;
+  }
+
+  @include below(md) {
+    top: 80px;
+  }
+
+  @include below(sm) {
+    top: 60px;
+    right: 8px;
+  }
+}
+
+.scroll-up span {
+  position: absolute;
+  background: #919191;
+  transition: .3s ease;
+  top: 50%;
+  left: 50%;
+}
+
+.scroll-up span:nth-child(1) {
+  width: 6px;
+  height: 21px;
+  border-radius: 3px;
+  margin: 3px 0 0 0;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-up span:nth-child(2) {
+  width: 6px;
+  height: 17px;
+  border-radius: 0 0 3px 3px;
+  margin: -5px 0 0 -4px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.scroll-up span:nth-child(3) {
+  width: 6px;
+  height: 17px;
+  border-radius: 0 0 3px 3px;
+  margin: -5px 0px 0 4px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.scroll-up span:nth-child(4) {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  margin: 20px 0 0 0;
+}
+
+.scroll-up span:nth-child(5) {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  margin: 20px 0 0 0;
+}
+
+.scroll-up span:nth-child(6) {
+  width: 4px;
+  height: 4px;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  margin: 21px 0 0 0;
+}
+
+.scroll-up:hover span {
+  background: #000;
+}
+
+.scroll-up:hover span:nth-child(1) {
+  height: 25px;
+  margin: -9px 0 0 0;
+}
+
+.scroll-up:hover span:nth-child(2) {
+  margin: -18px 0 0 -4px;
+}
+
+.scroll-up:hover span:nth-child(3) {
+  margin: -18px 0 3px 3px;
+}
+
+.scroll-up:hover span:nth-child(4) {
+  margin: 11px 0 0 0;
+}
+
+.scroll-up:hover span:nth-child(5) {
+  // transform: translate(-50%, -50%) scale(1);
+  margin: 20px 0 0 0;
+}
+
+.scroll-up:hover span:nth-child(6) {
+  // transform: translate(-50%, -50%) scale(1);
+  margin: 28px 0 0 0;
+}
