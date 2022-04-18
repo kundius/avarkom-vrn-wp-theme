@@ -81,19 +81,6 @@
     display: block;
     padding-bottom: 100%;
   }
-
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 50%;
-    bottom: 100%;
-    width: 12px;
-    height: 37px;
-    border-left: 2px solid #6cd8ff;
-    border-top: 2px solid #6cd8ff;
-    border-radius: 6px 0 0 0;
-  }
 }
 
 .additional-item_first::after {

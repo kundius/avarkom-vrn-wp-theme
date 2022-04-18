@@ -165,7 +165,7 @@ Template Name: Главная
                   <img
                     src="<?php bloginfo('template_url') ?>/dist/images/additional-1.svg"
                     alt=""
-                    style="width: calc(167em / 16); height: calc(209em / 16);"
+                    style="width: calc(108em / 16); height: calc(109em / 16);"
                   />
                 </div>
               </div>
@@ -178,7 +178,7 @@ Template Name: Главная
                   <img
                     src="<?php bloginfo('template_url') ?>/dist/images/additional-2.svg"
                     alt=""
-                    style="width: calc(159em / 16); height: calc(162em / 16);"
+                    style="width: calc(116em / 16); height: calc(133em / 16);"
                   />
                 </div>
               </div>
@@ -191,7 +191,7 @@ Template Name: Главная
                   <img
                     src="<?php bloginfo('template_url') ?>/dist/images/additional-3.svg"
                     alt=""
-                    style="width: calc(164em / 16); height: calc(179em / 16);"
+                    style="width: calc(143em / 16); height: calc(134em / 16);"
                   />
                 </div>
               </div>
