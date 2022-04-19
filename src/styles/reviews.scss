@@ -8,6 +8,11 @@
   padding-bottom: 39px;
   background-image: radial-gradient(circle at 40% 80%,#159afd 0,#0e67a9 40%);
 
+  @include below(md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   @include below(sm) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -46,6 +51,10 @@
 
 .reviews__layout {
   display: flex;
+
+  @include below(md) {
+    flex-direction: column;
+  }
 }
 
 .reviews__layout-content {
@@ -66,6 +75,13 @@
   @include below(lg) {
     width: 280px;
     margin-right: 50px;
+  }
+
+  @include below(md) {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
   }
 }
 

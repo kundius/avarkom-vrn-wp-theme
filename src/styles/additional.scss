@@ -184,9 +184,9 @@
   }
 
   @include below(md) {
-    font-size: calc(28em / 16);
-    line-height: calc(30em / 28);
-    top: calc(30em / 28);
+    font-size: calc(32em / 16);
+    line-height: calc(30em / 32);
+    top: calc(30em / 32);
   }
 }
 

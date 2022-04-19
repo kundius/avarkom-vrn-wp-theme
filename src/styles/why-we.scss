@@ -5,6 +5,10 @@
   @include below(lg) {
     font-size: 90%;
   }
+
+  @include below(md) {
+    font-size: 60%;
+  }
 }
 
 .why-we__title {
