@@ -23,7 +23,7 @@
   }
 
   @include below(sm) {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 
@@ -151,6 +151,10 @@
   font-size: 30px;
   line-height: 1;
   font-weight: bold;
+
+  @include below(sm) {
+    font-size: 28px;
+  }
 }
 
 .intro-body__title span {
@@ -159,6 +163,10 @@
   color: #4e4e4e;
   display: block;
   margin-bottom: 12px;
+
+  @include below(sm) {
+    font-size: 40px;
+  }
 }
 
 .intro-body__desc {
@@ -187,6 +195,7 @@
     padding-left: 0px;
     padding-right: 0px;
     width: 460px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -212,9 +221,10 @@
   }
 
   @include below(sm) {
-    padding-top: 20px;
     padding-bottom: 10px;
     border-radius: 36px;
+    margin-top: -155px;
+    padding-top: 155px;
   }
 }
 
@@ -258,7 +268,7 @@
   }
 
   @include below(sm) {
-    padding-top: 30px;
+    padding-top: 20px;
   }
 }
 
@@ -340,7 +350,7 @@
   }
 
   @include below(sm) {
-    margin-top: 30px;
+    margin-top: 140px;
     flex-wrap: wrap;
   }
 }

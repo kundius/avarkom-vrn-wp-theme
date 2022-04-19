@@ -82,6 +82,7 @@
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 0;
   }
 }
 
@@ -222,7 +223,7 @@
   }
 
   @include below(md) {
-    padding: 25px;
+    padding: 45px;
   }
 }
 
