@@ -34,6 +34,7 @@ Template Name: Главная
               <div class="intro-body__desc">
                 Служба аварийных комиссаров
               </div>
+              <div class="intro-body__arrow"></div>
             </div>
 
             <div class="intro-body__form">

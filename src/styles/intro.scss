@@ -73,6 +73,41 @@
   align-items: center;
   padding-left: 30px;
   min-height: 100%;
+  position: relative;
+}
+
+.intro-body__arrow {
+  position: absolute;
+  left: 100%;
+  bottom: 100%;
+  width: 7px;
+  height: 25px;
+  background: #565656;
+  border-radius: 3px;
+}
+
+.intro-body__arrow::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #565656;
+  left: -10px;
+  top: 0;
+  transform: rotate(-35deg);
+}
+
+.intro-body__arrow::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #565656;
+  right: -10px;
+  top: 0;
+  transform: rotate(35deg);
 }
 
 .intro-body__title {
