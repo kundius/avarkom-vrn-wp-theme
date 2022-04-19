@@ -62,6 +62,11 @@
   margin-right: 75px;
   margin-top: 64px;
   flex-shrink: 0;
+
+  @include below(lg) {
+    width: 280px;
+    margin-right: 50px;
+  }
 }
 
 .reviews-headline {
@@ -84,6 +89,10 @@
   line-height: 1.67;
   color: #fff;
   padding-top: 18px;
+
+  @include below(lg) {
+    font-size: 16px;
+  }
 }
 
 .reviews-nav {

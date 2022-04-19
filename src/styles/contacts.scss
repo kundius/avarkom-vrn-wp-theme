@@ -52,11 +52,11 @@
   z-index: 20;
 
   @include below(lg) {
-    padding: 40px 40px 25px;
+    padding: 40px 40px 0;
   }
 
   @include below(sm) {
-    padding: 25px 58px;
+    padding: 25px 58px 0;
     margin-left: -50px;
     margin-right: -50px;
   }
