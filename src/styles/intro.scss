@@ -3,6 +3,11 @@
   padding-top: 56px;
   padding-bottom: 73px;
 
+  @include below(md) {
+    background-position: calc(50% - 220px) 92px;
+    padding-top: 35px;
+  }
+
   @include below(sm) {
     padding-top: 25px;
     padding-bottom: 40px;
@@ -23,6 +28,10 @@
   letter-spacing: 0.14em;
   font-weight: 500;
   line-height: 1;
+
+  @include below(md) {
+    text-align: center;
+  }
 
   @include below(sm) {
     font-size: 14px;
@@ -47,6 +56,7 @@
 
   @include below(md) {
     letter-spacing: 0.05em;
+    text-align: center;
   }
 
   @include below(sm) {
@@ -215,8 +225,10 @@
 
   @include below(md) {
     order: 1;
-    margin-top: 20px;
+    margin-top: 0;
     color: #4e4e4e;
+    margin-bottom: -36px;
+    transform: translateY(60px);
   }
 
   @include below(sm) {
