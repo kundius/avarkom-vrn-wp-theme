@@ -203,7 +203,7 @@ iframe {
 
   @include below(sm) {
     font-size: 18px;
-    padding: 20px;
+    padding: 20px 25px;
   }
 }
 
@@ -269,6 +269,11 @@ iframe {
   &::after {
     width: 17px;
     height: 5px;
+  }
+
+  @include below(sm) {
+    margin-right: -16px;
+    margin-left: 16px;
   }
 }
 

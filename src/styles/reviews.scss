@@ -62,7 +62,6 @@
   position: relative;
 
   @include below(sm) {
-    display: none;
   }
 }
 
@@ -224,6 +223,11 @@
 
   @include below(md) {
     padding: 45px;
+  }
+
+  @include below(sm) {
+    padding: 20px;
+    border-radius: 12px;
   }
 }
 

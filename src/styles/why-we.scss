@@ -72,7 +72,7 @@
   padding-top: calc(34em / 16);
 
   @include below(sm) {
-    margin-top: calc(40em / 16);
+    margin-top: calc(50em / 16);
   }
 }
 
@@ -111,7 +111,7 @@
   padding-top: calc(56em / 16);
 
   @include below(sm) {
-    margin-top: calc(40em / 16);
+    margin-top: calc(50em / 16);
   }
 }
 
