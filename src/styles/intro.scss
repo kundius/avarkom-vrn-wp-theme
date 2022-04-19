@@ -6,6 +6,7 @@
   @include below(md) {
     background-position: calc(50% - 220px) 82px;
     padding-top: 35px;
+    padding-bottom: 40px;
   }
 
   @include below(sm) {
@@ -331,6 +332,11 @@
   @include below(lg) {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  @include below(md) {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @include below(sm) {
