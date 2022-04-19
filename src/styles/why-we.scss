@@ -1,6 +1,6 @@
 .why-we {
-  padding-top: 53px;
-  padding-bottom: 81px;
+  padding-top: calc(53em / 16);
+  padding-bottom: calc(81em / 16);
 }
 
 .why-we__title {
@@ -8,10 +8,10 @@
   text-align: center;
   color: #506e9a;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: calc(60em / 16);
   line-height: 1;
   letter-spacing: 0.01em;
-  margin-bottom: 23px;
+  margin-bottom: calc(23em / 60);
 }
 
 .why-we__layout {
@@ -21,14 +21,14 @@
 
 .why-we-years {
   position: relative;
-  width: 320px;
-  padding-top: 56px;
+  width: calc(320em / 16);
+  padding-top: calc(56em / 16);
 }
 
 .why-we-years::before {
   content: '';
-  width: 17px;
-  height: 17px;
+  width: calc(17em / 16);
+  height: calc(17em / 16);
   border-radius: 50%;
   background: #ff8825;
   position: absolute;
@@ -41,28 +41,28 @@
   font-weight: bold;
   text-align: center;
   color: #51afe4;
-  font-size: 160px;
+  font-size: calc(160em / 16);
   line-height: 1;
 }
 
 .why-we-years__label {
-  font-size: 36px;
+  font-size: calc(36em / 16);
   line-height: 1;
   color: #252525;
   text-align: center;
-  margin-top: -2px;
+  margin-top: calc(-2em / 36);
 }
 
 .why-we-expert {
   position: relative;
-  width: 320px;
-  padding-top: 34px;
+  width: calc(320em / 16);
+  padding-top: calc(34em / 16);
 }
 
 .why-we-expert::before {
   content: '';
-  width: 17px;
-  height: 17px;
+  width: calc(17em / 16);
+  height: calc(17em / 16);
   border-radius: 50%;
   background: #ff8825;
   position: absolute;
@@ -72,8 +72,8 @@
 }
 
 .why-we-expert__image {
-  width: 156px;
-  height: 156px;
+  width: calc(156em / 16);
+  height: calc(156em / 16);
   margin-left: auto;
   margin-right: auto;
   background: url('../images/why-we.svg') no-repeat 50% 50%;
@@ -81,23 +81,23 @@
 }
 
 .why-we-expert__label {
-  font-size: 36px;
+  font-size: calc(36em / 16);
   line-height: 1;
   color: #252525;
   text-align: center;
-  margin-top: 12px;
+  margin-top: calc(12em / 36);
 }
 
 .why-we-total {
   position: relative;
-  width: 320px;
-  padding-top: 56px;
+  width: calc(320em / 16);
+  padding-top: calc(56em / 16);
 }
 
 .why-we-total::before {
   content: '';
-  width: 17px;
-  height: 17px;
+  width: calc(17em / 16);
+  height: calc(17em / 16);
   border-radius: 50%;
   background: #ff8825;
   position: absolute;
@@ -107,23 +107,23 @@
 }
 
 .why-we-total__before {
-  font-size: 36px;
+  font-size: calc(36em / 16);
   line-height: 1;
   color: #252525;
   text-align: center;
 }
 
 .why-we-total__number {
-  font-size: 100px;
+  font-size: calc(100em / 16);
   line-height: 1;
   color: #51afe4;
   text-align: center;
 }
 
 .why-we-total__after {
-  font-size: 36px;
+  font-size: calc(36em / 16);
   line-height: 1;
   color: #252525;
   text-align: center;
-  margin-top: 10px;
+  margin-top: calc(10em / 36);
 }
