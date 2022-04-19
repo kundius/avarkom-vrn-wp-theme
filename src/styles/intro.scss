@@ -74,6 +74,10 @@
   padding-left: 30px;
   min-height: 100%;
   position: relative;
+
+  @include below(lg) {
+    padding-left: 10px;
+  }
 }
 
 .intro-body__arrow {
@@ -146,6 +150,11 @@
   width: 50%;
   padding-left: 56px;
   padding-right: 50px;
+
+  @include below(lg) {
+    padding-left: 36px;
+    padding-right: 30px;
+  }
 }
 
 .intro-form {
