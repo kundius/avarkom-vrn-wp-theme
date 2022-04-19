@@ -83,6 +83,7 @@
   width: 7px;
   height: 25px;
   background: #565656;
+  transform: rotate(-135deg);
   border-radius: 3px;
 }
 
@@ -90,24 +91,26 @@
   content: '';
   position: absolute;
   display: block;
-  width: 20px;
-  height: 4px;
+  width: 18px;
+  border-radius: 3px;
+  height: 6px;
   background: #565656;
   left: -10px;
   top: 0;
-  transform: rotate(-35deg);
+  transform: rotate(-45deg);
 }
 
 .intro-body__arrow::after {
   content: '';
   position: absolute;
   display: block;
-  width: 20px;
-  height: 4px;
+  width: 18px;
+  height: 6px;
+  border-radius: 3px;
   background: #565656;
   right: -10px;
   top: 0;
-  transform: rotate(35deg);
+  transform: rotate(45deg);
 }
 
 .intro-body__title {
