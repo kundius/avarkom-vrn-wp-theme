@@ -58,6 +58,7 @@
 .intro-body {
   background-color: rgba(215, 215, 215, 0.2);
   display: flex;
+  flex-wrap: wrap;
   border: 1px solid transparent;
   justify-content: space-between;
 
