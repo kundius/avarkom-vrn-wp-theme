@@ -408,6 +408,9 @@
 
 .header-messengers {
 
+  @include below(lg) {
+    display: none;
+  }
 }
 
 .header-messengers__label {
