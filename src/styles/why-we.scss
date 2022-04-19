@@ -1,6 +1,10 @@
 .why-we {
   padding-top: calc(53em / 16);
   padding-bottom: calc(81em / 16);
+
+  @include below(lg) {
+    font-size: 80%;
+  }
 }
 
 .why-we__title {
