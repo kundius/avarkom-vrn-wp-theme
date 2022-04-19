@@ -47,20 +47,9 @@
 
 .contacts-body {
   background-color: rgba(46, 48, 53, 0.4);
-  padding: 52px 80px 25px;
+  padding: 52px 80px 0;
   position: relative;
   z-index: 20;
-  
-  &::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 12px solid rgba(46, 48, 53, 0.4);
-  }
 
   @include below(lg) {
     padding: 40px 40px 25px;
@@ -81,18 +70,31 @@
 
 .contacts-body__title {
   line-height: 1;
-  margin-top: 25px;
+  margin-top: 29px;
+  padding: 20px 0 17px 0;
   width: 460px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(48, 117, 169, 0.851);
-  border-radius: 12px 12px 0 0;
+  background-color: rgba(48,117,169,.851);
+  border-radius: 10px 10px 0 0;
+  position: relative;
 
   @include below(sm) {
     font-size: 26px;
     margin-top: 48px;
   }
+}
+  
+.contacts-body__title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid rgba(48,117,169,.851);
 }
 
 .contacts-body__title-main {
@@ -112,11 +114,12 @@
   line-height: 1;
   text-align: center;
   letter-spacing: 0.075em;
+  margin-top: 6px;
 }
 
 .contacts-form {
   margin-top: -85px;
-  border-radius: 12px 12px 64px 64px;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.09);
   display: flex;
