@@ -248,6 +248,8 @@
 
   @include below(sm) {
     font-size: 30px;
+    margin-bottom: -30px;
+    transform: translateY(30px);
   }
 }
 
@@ -365,6 +367,8 @@
   }
 
   @include below(sm) {
+    flex-direction: row;
+    text-align: left;
     width: 100%;
     & + .intro-advantages__item {
       margin-top: 20px;
@@ -393,6 +397,11 @@
   @include below(md) {
     margin-right: 0;
     margin-bottom: 12px;
+  }
+
+  @include below(sm) {
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
