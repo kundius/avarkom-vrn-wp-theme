@@ -17,6 +17,10 @@
 .intro-special {
   margin-bottom: 41px;
 
+  @include below(md) {
+    padding-bottom: 50px;
+  }
+
   @include below(sm) {
     margin-bottom: 45px;
   }
@@ -341,6 +345,7 @@
 
   @include below(md) {
     text-align: center;
+    flex-direction: column;
   }
 
   @include below(sm) {
@@ -367,6 +372,11 @@
 
   @include below(lg) {
     margin-right: 12px;
+  }
+
+  @include below(md) {
+    margin-right: 0;
+    margin-bottom: 12px;
   }
 }
 
