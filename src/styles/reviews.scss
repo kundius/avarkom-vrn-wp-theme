@@ -6,7 +6,7 @@
   max-width: 100%;
   padding-top: 127px;
   padding-bottom: 39px;
-  background-image: radial-gradient(circle at 40% 100%, #159afd 0%, #0e67a9 100%);
+  background-image: radial-gradient(circle at 40% 80%,#159afd 0,#0e67a9 40%);
 
   @include below(sm) {
     padding-top: 40px;
@@ -368,7 +368,7 @@
   overflow: hidden;
   position: fixed;
   display: none;
-  z-index: 300;
+  z-index: 200;
 
   @include below(lg) {
     padding: 35px;

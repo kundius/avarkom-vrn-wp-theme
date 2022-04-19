@@ -404,7 +404,12 @@ Template Name: Главная
             </div>
 
             <div class="contacts-body__title">
-              Обратная связь
+              <div class="contacts-body__title-main">
+                Обратная связь
+              </div>
+              <div class="contacts-body__title-desc">
+                У Вас есть вопросы? Свяжитесь с нами:
+              </div>
             </div>
           </div>
 
