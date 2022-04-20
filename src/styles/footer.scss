@@ -262,12 +262,14 @@
   }
 
   @include below(md) {
-    top: 80px;
+    bottom: 80px;
   }
 
   @include below(sm) {
-    top: 60px;
+    bottom: 60px;
     right: 8px;
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -285,6 +287,10 @@
   border-radius: 3px;
   margin: 3px 0 0 0;
   transform: translate(-50%, -50%);
+
+  @include below(sm) {
+    width: 5px;
+  }
 }
 
 .scroll-up span:nth-child(2) {
@@ -293,6 +299,10 @@
   border-radius: 0 0 3px 3px;
   margin: -5px 0 0 -4px;
   transform: translate(-50%, -50%) rotate(45deg);
+
+  @include below(sm) {
+    width: 5px;
+  }
 }
 
 .scroll-up span:nth-child(3) {
@@ -301,6 +311,10 @@
   border-radius: 0 0 3px 3px;
   margin: -5px 0px 0 4px;
   transform: translate(-50%, -50%) rotate(-45deg);
+
+  @include below(sm) {
+    width: 5px;
+  }
 }
 
 .scroll-up span:nth-child(4) {
@@ -309,6 +323,11 @@
   border-radius: 3px;
   transform: translate(-50%, -50%);
   margin: 20px 0 0 0;
+
+  @include below(sm) {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 .scroll-up span:nth-child(5) {
@@ -317,6 +336,11 @@
   border-radius: 3px;
   transform: translate(-50%, -50%);
   margin: 20px 0 0 0;
+
+  @include below(sm) {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 .scroll-up span:nth-child(6) {
@@ -325,6 +349,11 @@
   border-radius: 3px;
   transform: translate(-50%, -50%);
   margin: 21px 0 0 0;
+
+  @include below(sm) {
+    width: 3px;
+    height: 3px;
+  }
 }
 
 .scroll-up:hover span {
