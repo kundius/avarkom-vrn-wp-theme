@@ -131,6 +131,10 @@
   height: 54px;
   background: #6cd8ff;
   transform: translateX(-50%);
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .additional-item_last::after {
