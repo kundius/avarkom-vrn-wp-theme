@@ -38,7 +38,7 @@ Template Name: Главная
             </div>
 
             <div class="intro-body__form">
-              <form action="/wp-json/contact-form-7/v1/contact-forms/36/feedback" method="post" class="intro-form js-form">
+              <form action="/wp-json/contact-form-7/v1/contact-forms/29/feedback" method="post" class="intro-form js-form">
                 <div class="intro-form__title">
                   Срочно!!!
                 </div>
@@ -414,7 +414,7 @@ Template Name: Главная
             </div>
           </div>
 
-          <form action="/wp-json/contact-form-7/v1/contact-forms/36/feedback" method="post" class="contacts-form js-form">
+          <form action="/wp-json/contact-form-7/v1/contact-forms/29/feedback" method="post" class="contacts-form js-form">
             <div class="contacts-form__process">
               <div class="contacts-form__input">
                 <span class="wpcf7-form-control-wrap your-phone">

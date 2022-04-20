@@ -65,7 +65,7 @@
         Оставить отзыв
       </div>
 
-      <form action="/wp-json/contact-form-7/v1/contact-forms/37/feedback" method="post" class="modal-form js-form">
+      <form action="/wp-json/contact-form-7/v1/contact-forms/30/feedback" method="post" class="modal-form js-form">
         <div class="modal-form__process">
           <div class="modal-form__field">
             <label class="ui-input-field">
