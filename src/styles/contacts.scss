@@ -79,11 +79,6 @@
   background-color: rgba(48,117,169,.851);
   border-radius: 10px 10px 0 0;
   position: relative;
-
-  @include below(sm) {
-    font-size: 26px;
-    margin-top: 48px;
-  }
 }
   
 .contacts-body__title::after {
@@ -106,6 +101,10 @@
   text-align: center;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.09);
   letter-spacing: 0.05em;
+
+  @include below(sm) {
+    font-size: 26px;
+  }
 }
 
 .contacts-body__title-desc {
@@ -115,6 +114,10 @@
   text-align: center;
   letter-spacing: 0.075em;
   margin-top: 6px;
+
+  @include below(sm) {
+    font-size: 11px;
+  }
 }
 
 .contacts-form {
@@ -135,6 +138,8 @@
   z-index: 10;
 
   @include below(sm) {
+    margin-top: -80px;
+    padding-top: 80px;
     padding-bottom: 20px;
   }
 }
