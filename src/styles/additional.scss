@@ -59,6 +59,10 @@
   top: -39px;
   height: 2px;
   background: #6cd8ff;
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .additional__grid {
@@ -111,6 +115,10 @@
   border-top: 2px solid #6cd8ff;
   border-radius: 8px 0 0 0;
   transform: translateX(-50%);
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .additional-item_middle::after {
@@ -137,6 +145,10 @@
   border-top: 2px solid #6cd8ff;
   border-radius: 0 8px 0 0;
   transform: translateX(-50%);
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .additional-item__number {
