@@ -33,7 +33,7 @@
     <div class="header-messengers">
       <div class="header-messengers__label">Задайте вопрос напрямую в:</div>
       <div class="header-messengers__buttons">
-        <a class="header-messengers__button header-messengers__button_whatsapp" href="whatsapp://send?text=Hello&phone=<?php echo preg_replace("/[ \(\)\-]/", "", get_field('phone_whatsapp', 'options')) ?>">
+        <a class="header-messengers__button header-messengers__button_whatsapp" href="whatsapp://send?text=Hello&phone=<?php echo preg_replace("/[ \(\)\-]/", "", get_field('theme_whatsapp', 'options')) ?>">
           WhatsApp
         </a>
         <a class="header-messengers__button header-messengers__button_viber" href="viber://add?number=<?php echo preg_replace("/[^,.0-9]/", '', get_field('theme_viber', 'options')) ?>">
