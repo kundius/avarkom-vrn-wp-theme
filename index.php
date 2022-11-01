@@ -6,23 +6,27 @@
   <body <?php body_class();?>>
     <?php wp_body_open();?>
 
-    <div class="ui-wrapper">
-      <?php get_template_part('partials/header');?>
+    <div class="wrapper">
+      <?php get_template_part('partials/header'); ?>
 
-      <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
-            
-      <div class="ui-container">
-        <h1>
+      <section class="page-section">
+        <div class="ui-container">
+          <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+            <?php bcn_display() ?>
+          </div>
+
+          <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
+          <h1 class="page-title">
             <?php the_title() ?>
-        </h1>
-        <?php the_content() ?>
-      </div>
+          </h1>
+          <?php the_content() ?>
+          <?php endwhile; else: ?>
+            <p>Извините, ничего не найдено.</p>
+          <?php endif; ?>
+        </div>
+      </section>
 
-      <?php endwhile; else: ?>
-        <p>Извините, ничего не найдено.</p>
-      <?php endif; ?>
-
-      <?php get_template_part('partials/footer');?>
+      <?php get_template_part('partials/footer'); ?>
     </div>
   </body>
 </html>
