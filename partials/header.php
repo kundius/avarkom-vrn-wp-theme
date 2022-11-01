@@ -15,16 +15,16 @@
   
     <ul class="header__menu">
       <li>
-        <a href="#services">Услуги</a>
+        <a href="/#services">Услуги</a>
       </li>
       <li>
-        <a href="#advantages">Преимущества</a>
+        <a href="/#advantages">Преимущества</a>
       </li>
       <li>
-        <a href="#reviews">Отзывы</a>
+        <a href="/#reviews">Отзывы</a>
       </li>
       <li>
-        <a href="#contacts">Контакты</a>
+        <a href="/#contacts">Контакты</a>
       </li>
     </ul>
 
