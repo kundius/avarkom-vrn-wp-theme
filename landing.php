@@ -319,9 +319,9 @@ Template Name: Главная
       </div>
     
       <?php $contacts = get_field('theme_contacts_items', 'options') ?>
-      <section class="section-contacts" data-scrollspy-section id="contacts">
+      <section class="section-contacts" data-scrollspy-section id="contacts" itemscope="" itemtype="http://schema.org/Organization">
         <div class="ui-container">
-          <div class="section-contacts__title">Контакты</div>
+          <div class="section-contacts__title">Контакты <span itemprop="name" hidden="">АВАРКОМ</span></div>
 
           <div class="contacts-body">
             <div class="contacts-body__groups">
@@ -330,7 +330,7 @@ Template Name: Главная
                 <div class="contacts-group__title">
                   <?php echo $contact['title'] ?>
                 </div>
-                <div class="contacts-group__address">
+                <div class="contacts-group__address" itemprop="address">
                   <?php echo $contact['address'] ?>
                 </div>
                 <div class="contacts-group__data">
@@ -340,7 +340,7 @@ Template Name: Главная
                       if ($data['type'] === 'email') {
                         echo '<a href="mailto:' . $data['value'] . '">' . $data['value'] . '</a>';
                       } else if ($data['type'] === 'phone') {
-                        echo '<a href="tel:' . $data['value'] . '">' . $data['value'] . '</a>';
+                        echo '<a href="tel:' . $data['value'] . '" itemprop="telephone">' . $data['value'] . '</a>';
                       } else {
                         echo $data['value'];
                       }
