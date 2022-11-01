@@ -390,3 +390,40 @@ iframe {
   line-height: 1;
   letter-spacing: 0.1em;
 }
+
+.breadcrumbs {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding: 14px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  a {
+    color: #a7b9cd;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  > li,
+  > span {
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: '';
+      margin: 0 12px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 3px;
+      height: 3px;
+      border-right: 1px solid #a7b9cd;
+      border-bottom: 1px solid #a7b9cd;
+      transform: rotate(-45deg);
+    }
+    &:first-child::before {
+      display: none;
+    }
+  }
+}
