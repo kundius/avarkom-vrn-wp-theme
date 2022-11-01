@@ -35,29 +35,27 @@ $query = new WP_Query($query_params);
         <h1 class="page-title"><?php single_cat_title() ?></h1>
 
         <?php if ($query->have_posts()): ?>
-        <div class="articles-layout__list">
-          <div class="articles-layout__list-grid">
-            <?php foreach ($query->posts as $item): ?>
-            <div class="articles-layout__list-item">
-              <article class="articles-item">
-                <?php if ($thumbnail = get_the_post_thumbnail($item, 'w400')): ?>
-                <div class="articles-item__image">
-                  <?php echo $thumbnail ?>
-                </div>
-                <?php endif; ?>
-                <div class="articles-item__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
-                <div class="articles-item__title"><a href="<?php the_permalink($item) ?>"><?php echo get_the_title($item) ?></a></div>
-                <?php if ($excerpt = get_the_excerpt($item)): ?>
-                  <div class="articles-item__desc"><?php echo $excerpt ?></div>
-                <?php endif; ?>
-              </article>
-            </div>
-            <?php endforeach; ?>
+        <div class="articles-grid">
+          <?php foreach ($query->posts as $item): ?>
+          <div class="articles-grid__cell">
+            <article class="articles-item">
+              <?php if ($thumbnail = get_the_post_thumbnail($item, 'w400')): ?>
+              <div class="articles-item__image">
+                <?php echo $thumbnail ?>
+              </div>
+              <?php endif; ?>
+              <div class="articles-item__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
+              <div class="articles-item__title"><a href="<?php the_permalink($item) ?>"><?php echo get_the_title($item) ?></a></div>
+              <?php if ($excerpt = get_the_excerpt($item)): ?>
+                <div class="articles-item__desc"><?php echo $excerpt ?></div>
+              <?php endif; ?>
+            </article>
           </div>
+          <?php endforeach; ?>
+        </div>
 
-          <div class="articles-layout__list-more">
-            <?php wp_pagenavi(['query' => $query]) ?>
-          </div>
+        <div class="articles-more">
+          <?php wp_pagenavi(['query' => $query]) ?>
         </div>
         <?php endif; ?>
       </div>
