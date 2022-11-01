@@ -321,7 +321,7 @@ Template Name: Главная
       <?php $contacts = get_field('theme_contacts_items', 'options') ?>
       <section class="section-contacts" data-scrollspy-section id="contacts" itemscope="" itemtype="http://schema.org/Organization">
         <div class="ui-container">
-          <div class="section-contacts__title">Контакты <span itemprop="name" hidden="">АВАРКОМ</span></div>
+          <div class="section-contacts__title">Контакты <span itemprop="name" hidden>АВАРКОМ</span></div>
 
           <div class="contacts-body">
             <div class="contacts-body__groups">
