@@ -330,7 +330,7 @@ Template Name: Главная
                 <div class="contacts-group__title">
                   <?php echo $contact['title'] ?>
                 </div>
-                <div class="contacts-group__address" itemprop="address">
+                <div class="contacts-group__address">
                   <?php echo $contact['address'] ?>
                 </div>
                 <div class="contacts-group__data">
@@ -340,7 +340,7 @@ Template Name: Главная
                       if ($data['type'] === 'email') {
                         echo '<a href="mailto:' . $data['value'] . '">' . $data['value'] . '</a>';
                       } else if ($data['type'] === 'phone') {
-                        echo '<a href="tel:' . $data['value'] . '" itemprop="telephone">' . $data['value'] . '</a>';
+                        echo '<a href="tel:' . preg_replace('/[^0-9]/', '', $data['value']) . '">' . $data['value'] . '</a>';
                       } else {
                         echo $data['value'];
                       }
