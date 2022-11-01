@@ -14,14 +14,18 @@ Array.prototype.forEach.call(sections, function (e) {
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
+    if (!link.hash) return
 
-    const offset = prepared[link.hash] - header.clientHeight;
-
-    window.scrollTo({
-      top: offset,
-      behavior: "smooth",
-    });
+    if (prepared[link.hash]) {
+      e.preventDefault();
+  
+      const offset = prepared[link.hash] - header.clientHeight;
+  
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+    }
   });
 });
 
